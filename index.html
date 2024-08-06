@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Himel</title>
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<!-- Icons CSS -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/icons.css" />
+	<!-- App CSS -->
+	<link rel="stylesheet" href="assets/css/app.css" />
+	<link rel="stylesheet" href="assets/css/dark-style.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!--header-->
+		<header class="top-header">
+			<nav class="navbar navbar-expand">
+				<div class="left-topbar d-flex align-items-center">
+					<a href="javascript:;" class="toggle-btn">	<i class="bx bx-menu"></i>
+					</a>
+					<div class="logo-white">
+						<img src="assets/images/logo.png" class="logo-icon" alt="">
+					</div>
+					<div class="logo-dark">
+						<img src="assets/images/logo.png" class="logo-icon" alt="">
+					</div>
+				</div>
+				<!-- <div class="flex-grow-1 search-bar">
+					<div class="input-group">
+						<div class="input-group-prepend search-arrow-back">
+							<button class="btn btn-search-back" type="button"><i class="bx bx-arrow-back"></i>
+							</button>
+						</div>
+						<input type="text" class="form-control" placeholder="search" />
+						<div class="input-group-append">
+							<button class="btn btn-search" type="button"><i class="lni lni-search-alt"></i>
+							</button>
+						</div>
+					</div>
+				</div> -->
+				
+			</nav>
+		</header>
+		<!--page-wrapper-->
+		<div class="page-wrapper">
+			<!--sidebar-wrapper-->
+			<div class="sidebar-wrapper" data-simplebar="true">
+				<div class="sidebar-header">
+					<a href="javascript:;" class="toggle-btn"> <i class="bx bx-menu"></i>
+					</a>
+					<div class="logo-white">
+						<img src="assets/images/logo.png" class="logo-icon-2" alt="">
+					</div>
+					<div class="logo-dark">
+						<img src="assets/images/logo.png" class="logo-icon-2" alt="">
+					</div>
+				</div>
+				<!--navigation-->
+				<ul class="metismenu" id="menu">
+					<li>
+						<a class="has-arrow" href="javascript:;">
+							<div class="parent-icon"><i class="fa-solid fa-user fa-fade"></i>
+							</div>
+							<div class="menu-title">প্রোফাইল</div>
+						</a>
+						<ul class="">
+							<li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>নিজ প্রোফাইল</a>
+							</li>
+							<li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>পাসওয়ার্ড পরিবর্তন</a>
+							</li>
+							
+						</ul>
+					</li>
+					
+					<li>
+						<a href="emailbox.html">
+							<div class="parent-icon"><i class="fa-solid fa-download fa-fade"></i>
+							</div>
+							<div class="menu-title">সনদ ডাউন‌লোড</div>
+						</a>
+					</li>
+					<li>
+						<a href="chat-box.html">
+							<div class="parent-icon"> <i class="fa-solid fa-eye fa-fade"></i>
+							</div>
+							<div class="menu-title">আবেদনের অবস্থা দেখুন</div>
+						</a>
+					</li>
+					<li>
+						<a href="file-manager.html">
+							<div class="parent-icon"><i class="fa-solid fa-hand-holding-dollar fa-fade"></i>
+							</div>
+							<div class="menu-title">কর প‌রি‌শোধ করুন</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="parent-icon"><i class="fa-solid fa-people-roof fa-fade"></i>
+							</div>
+							<div class="menu-title navbar-brand w3-bar-item w3-button tablink" onclick="openCity(event, 'nagorik')">নাগরিক সনদ</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="parent-icon"><i class="fa-solid fa-person-circle-check fa-fade"></i>
+							</div>
+							<div class="menu-title navbar-brand w3-bar-item w3-button tablink" onclick="openCity(event, 'charitrik')">চারিত্রিক সনদ</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="parent-icon"><i class="fa-solid fa-person fa-fade"></i>
+							</div>
+							<div class="menu-title navbar-brand w3-bar-item w3-button tablink" onclick="openCity(event, 'obibahito')">অবিবাহিত সনদ</div>
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<div class="parent-icon"> <i class="fa-solid fa-people-robbery fa-fade"></i>
+							</div>
+							<div class="menu-title navbar-brand w3-bar-item w3-button tablink" onclick="openCity(event, 'London')">ওয়ারিশ সনদ</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-solid fa-people-arrows fa-fade"></i>
+							</div>
+							<div class="menu-title">একই নামের প্রত্যয়ন</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="parent-icon"><i class="fa-solid fa-users fa-fade"></i>
+							</div>
+							<div class="menu-title navbar-brand w3-bar-item w3-button tablink" onclick="openCity(event, 'canada')">পারিবারিক সনদ</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-solid fa-house-circle-xmark fa-fade"></i>
+							</div>
+							<div class="menu-title">ভূ‌মিহীন সনদ
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-regular fa-address-book fa-fade"></i>
+							</div>
+							<div class="menu-title">বিধবা সনদ
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-solid fa-table-list fa-fade"></i>
+							</div>
+							<div class="menu-title">সনদ  তালিকা
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-solid fa-house-circle-xmark fa-fade"></i>
+							</div>
+							<div class="menu-title">চাকরি সনদ 
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="parent-icon"><i class="fa-duotone fa-solid fa-bed fa-fade"></i>
+							</div>
+							<div class="menu-title navbar-brand w3-bar-item w3-button tablink" onclick="openCity(event, 'mtittiSonod')">মৃত্যু সনদ
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-solid fa-bangladeshi-taka-sign fa-fade"></i>
+							</div>
+							<div class="menu-title">বার্ষিক আয়
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-solid fa-gear fa-fade"></i>
+							</div>
+							<div class="menu-title">প্রত্যায়ন পত্র
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-solid fa-user-xmark fa-fade"></i>
+							</div>
+							<div class="menu-title">পুনঃ বিবাহ না হওয়া সনদ
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"> <i class="fa-solid fa-id-card fa-fade"></i>
+							</div>
+							<div class="menu-title">জাতীয় পরিচয় পত্র সংশোধন
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="widgets.html">
+							<div class="parent-icon"><i class="fa-regular fa-id-card fa-fade"></i>
+							</div>
+							<div class="menu-title">জাতীয় পরিচয় পত্র  নাম
+
+							</div>
+						</a>
+					</li>
+					
+				<!--end navigation-->
+			</div>
+			<!--end sidebar-wrapper-->
+
+             <!-- nagorik sonod  -->
+			 <div>
+				<div id="nagorik" class="w3-container city" style="display:none">
+					<section  class="container  pt-3">
+						<div class="notishbar mb-5 ">
+							  <div class="leftpart">
+								<h2 class="notic ">সর্বশেষ নোটিশ</h2>
+							  </div>
+								 <div class="rightpart">
+								   <div class="scrolling-wrap pt-2 px-2">
+									 <div class="comm ">
+									   <p class="scroltextt">আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।
+										 চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি॥</p> 
+										</div>
+									  </div>
+							  </div>
+						
+						  </div>
+						
+
+						  <section id="bdy2" class="Formpart">
+							<form action="#">
+				  
+							<div class="container">
+							  <div class="px-2">
+								<div class="formpart">
+								  <div class="row">
+				  
+									<div class="col-lg-6">
+									  <h4 class="formhead1">নাগরিক সনদ</h4>
+									  
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">আবেদনকারীর নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class=" frompart mb-5 ">পিতার নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class=" frompart mb-5 hh6">স্বামীর নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class=" frompart mb-5  hh6">মাতার নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									 
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">গ্রাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  
+									</div>
+									<div class="col-lg-6">
+									  <h4 class="formhead1">সনদের তথ্য</h4>
+									  
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">পাসপোর্ট নাম্বার</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">জাতীয় পরিচয় পত্র</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">জন্ম নিবন্ধন নাম্বার</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5 hh6">
+											হোল্ডিং নাম্বার</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+				
+									</div>
+								  </div>
+								</div>
+								
+							  </div>
+							  <button class="subbutn">Submit</button>
+							</div>
+						  </form>
+						  </section>
+						</section>
+
+					</div>
+				</div>
+             <!-- nagorik sonod   -->
+
+
+			   <!-- oarish sonod  -->
+			   <div>
+				<div id="London" class="w3-container city" style="display:none">
+					<section  class="container  pt-3">
+						<div class="notishbar mb-5 ">
+							  <div class="leftpart">
+								<h2 class="notic ">সর্বশেষ নোটিশ</h2>
+							  </div>
+								 <div class="rightpart">
+								   <div class="scrolling-wrap pt-2 px-2">
+									 <div class="comm ">
+									   <p class="scroltextt">আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।
+										 চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি॥</p> 
+										</div>
+									  </div>
+							  </div>
+						
+						  </div>
+						
+				  
+						  <section id="bdy2" class="Formpart">
+							<form action="#">
+				  
+							<div class="container">
+							  <div class="px-2">
+								<div class="formpart">
+								  <div class="row">
+				  
+									<div class="col-lg-6">
+									  <h4 class="formhead1">আবেদনকারীর তথ্য </h4>
+									  
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">আবেদনকারীর নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">জাতীয় পরিচয় পত্র</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">জন্ম নিবন্ধন নাম্বার</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class=" frompart mb-5 ">পিতার নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class=" frompart mb-5 hh6">স্বামীর নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class=" frompart mb-5  hh6">মাতার নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class=" frompart mb-5">জন্ম তারিখ</h6>
+										</div>
+										<input class=" inputs-cls " type="date" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class=" frompart mb-5 hh66">বৈবাহিক অবস্থা</h6>
+										</div>
+										<select name="cars" id="cars" class="selects">
+										  <option value="volvo">বিবাহিত </option>
+										  <option value="saab">অবিবাহিত </option>
+										</select>
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">মোবাইল নম্বর</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">হোল্ডিং নং</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">ওয়ার্ড নং</h6>
+										</div>
+										<select name="cars" id="cars" class="selects">
+										  <option value="volvo">Select</option>
+										  <option value="volvo">1</option>
+										  <option value="saab">2</option>
+										  <option value="saab">3</option>
+										  <option value="saab">4</option>
+										  <option value="saab">5</option>
+										  <option value="saab">6</option>
+										  <option value="saab">7</option>
+										  <option value="saab">8</option>
+										  <option value="saab">9</option>
+										</select>
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">ডাকঘর</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">গ্রাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  
+									</div>
+									<div class="col-lg-6">
+									  <h4 class="formhead1">মৃত ব্যাক্তির তথ্য </h4>
+									  
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5"> নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">জাতীয় পরিচয় পত্র</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">জন্ম নিবন্ধন নাম্বার</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5 hh6">পিতার নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5  hh6">মাতার নাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+				  
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">ওয়ার্ড নং</h6>
+										</div>
+										<select name="cars" id="cars" class="selects ">
+										  <option value="volvo">Select</option>
+										  <option value="volvo">1</option>
+										  <option value="saab">2</option>
+										  <option value="saab">3</option>
+										  <option value="saab">4</option>
+										  <option value="saab">5</option>
+										  <option value="saab">6</option>
+										  <option value="saab">7</option>
+										  <option value="saab">8</option>
+										  <option value="saab">9</option>
+										</select>
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">গ্রাম</h6>
+										</div>
+										<input class=" inputs-cls" type="text" >
+									  </div>
+									  <div class="fromsf">
+										<div class="www">
+										  <h6 class="frompart mb-5">বিস্তারিত</h6>
+										</div>
+										<textarea class="inputs-clss px-2  " name="w3review" rows="6" cols="50"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat necessitatibus, aliquam, natus veritatis, laudantium in sapiente facilis perspiciatis ad ipsam eius mollitia cupiditate itaque porro optio! Perspiciatis, cumque odio?</textarea>     
+									  </div>
+									</div>
+								  </div>
+								</div>
+				  
+								<h2 class=" oarish mt-5">ওয়ারিশগনের তথ্য দিন</h2>
+								<div class="col-lg-12">
+				  
+								  <div id="wrapper">
+									<table class=" table11"  cellspacing=2 cellpadding=5 id="data_table" >
+									<tr>
+									<th>নাম</th>
+									<th>পিতা/স্বামীর নাম</th>
+									<th>সম্পর্ক</th>
+									<tr>
+									<td><input type="text" id="new_name"></td>
+									<td><input type="text" id="new_country"></td>
+									<td><input type="text" id="new_age"></td>
+									<td><input  type="button" class="add" onclick="add_row();" value="+"></td>
+									</tr>
+									
+									</table>
+									</div>
+								</div>
+								
+							  </div>
+							  <button class="subbutn">Submit</button>
+							</div>
+						  </form>
+						  </section>
+						</section>
+
+					</div>
+				</div>
+			   <!-- oarish sonod  -->
+
+
+				<!-- poribar sonod -->
+				<div>
+					<div id="canada" class="w3-container city" style="display:none">
+						<section  class="container  pt-3">
+							<div class="notishbar mb-5 ">
+								  <div class="leftpart">
+									<h2 class="notic ">সর্বশেষ নোটিশ</h2>
+								  </div>
+									 <div class="rightpart">
+									   <div class="scrolling-wrap pt-2 px-2">
+										 <div class="comm ">
+										   <p class="scroltextt">আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।
+											 চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি॥</p> 
+											</div>
+										  </div>
+								  </div>
+							
+							  </div>
+							
+					  
+							  <section id="bdy2" class="Formpart">
+								<form action="#">
+					  
+								<div class="container">
+								  <div class="px-2">
+									<div class="formpart">
+									  <div class="row">
+					  
+										<div class="col-lg-8 m-auto">
+										  <h4 class="formhead1">পারিবারিক সনদ </h4>
+										  
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">আবেদনকারীর নাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">জাতীয় পরিচয় পত্র</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">জন্ম নিবন্ধন নাম্বার</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5 ">পিতার নাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5 hh6">স্বামীর নাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5  hh6">মাতার নাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5">জন্ম তারিখ</h6>
+											</div>
+											<input class=" inputs-cls " type="date" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5 hh66">বৈবাহিক অবস্থা</h6>
+											</div>
+											<select name="cars" id="cars" class="selects">
+											  <option value="volvo">বিবাহিত </option>
+											  <option value="saab">অবিবাহিত </option>
+											</select>
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">মোবাইল নম্বর</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">হোল্ডিং নং</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">ওয়ার্ড নং</h6>
+											</div>
+											<select name="cars" id="cars" class="selects">
+											  <option value="volvo">Select</option>
+											  <option value="volvo">1</option>
+											  <option value="saab">2</option>
+											  <option value="saab">3</option>
+											  <option value="saab">4</option>
+											  <option value="saab">5</option>
+											  <option value="saab">6</option>
+											  <option value="saab">7</option>
+											  <option value="saab">8</option>
+											  <option value="saab">9</option>
+											</select>
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">ডাকঘর</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">গ্রাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">বিস্তারিত</h6>
+											</div>
+											<textarea class="inputs-clss px-2  " name="w3review" rows="6" cols="50"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat necessitatibus, aliquam, natus veritatis, laudantium in sapiente facilis perspiciatis ad ipsam eius mollitia cupiditate itaque porro optio! Perspiciatis, cumque odio?</textarea>     
+										  </div>
+										  
+										</div>
+										
+									  </div>
+									</div>
+					  
+									<h2 class=" oarish mt-5">পারিবারিক সদস্যদের তথ্য
+									</h2>
+									<div class="col-lg-12">
+					  
+									  <div id="wrapper">
+										<table class=" table11"  cellspacing=2 cellpadding=5 id="data_table" >
+										<tr>
+										<th>নাম</th>
+										<th>পিতা/স্বামীর নাম</th>
+										<th>সম্পর্ক</th>
+										<tr>
+										<td><input type="text" id="new_name"></td>
+										<td><input type="text" id="new_country"></td>
+										<td><input type="text" id="new_age"></td>
+										<td><input  type="button" class="add" onclick="add_row();" value="+"></td>
+										</tr>
+										
+										</table>
+										</div>
+									</div>
+									
+								  </div>
+								  <button class="subbutn">Submit</button>
+								</div>
+							  </form>
+							  </section>
+							</section>
+					  </div>
+				</div>
+				
+				<!-- poribar sonod -->
+
+				<!-- charitrik sonod  -->
+				<div>
+					<div id="charitrik" class="w3-container city" style="display:none">
+						<section  class="container  pt-3">
+							<div class="notishbar mb-5 ">
+								  <div class="leftpart">
+									<h2 class="notic ">সর্বশেষ নোটিশ</h2>
+								  </div>
+									 <div class="rightpart">
+									   <div class="scrolling-wrap pt-2 px-2">
+										 <div class="comm ">
+										   <p class="scroltextt">আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।
+											 চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি॥</p> 
+											</div>
+										  </div>
+								  </div>
+							
+							  </div>
+							
+					  
+							  <section id="bdy2" class="Formpart">
+								<form action="#">
+					  
+								<div class="container">
+								  <div class="px-2">
+									<div class="formpart">
+									  <div class="row">
+					  
+										<div class="col-lg-8 m-auto">
+										  <h4 class="formhead1">চারিত্রিক সনদ </h4>
+										  
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">আবেদনকারীর নাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">জাতীয় পরিচয় পত্র</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">জন্ম নিবন্ধন নাম্বার</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">ডাকঘর</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">গ্রাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">বিস্তারিত</h6>
+											</div>
+											<textarea class="inputs-clss px-2  " name="w3review" rows="6" cols="50"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat necessitatibus, aliquam, natus veritatis, laudantium in sapiente facilis perspiciatis ad ipsam eius mollitia cupiditate itaque porro optio! Perspiciatis, cumque odio?</textarea>     
+										  </div>
+										  
+										</div>
+										
+									  </div>
+									</div>
+									
+								  </div>
+								  <button class="subbutn">Submit</button>
+								</div>
+							  </form>
+							  </section>
+							</section>
+					  </div>
+				</div>
+				<!-- charitruk sonod  -->
+
+				<!-- obibahito sonod  -->
+				<div>
+					<div id="obibahito" class="w3-container city" style="display:none">
+						<section  class="container  pt-3">
+							<div class="notishbar mb-5 ">
+								  <div class="leftpart">
+									<h2 class="notic ">সর্বশেষ নোটিশ</h2>
+								  </div>
+									 <div class="rightpart">
+									   <div class="scrolling-wrap pt-2 px-2">
+										 <div class="comm ">
+										   <p class="scroltextt">আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।
+											 চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি॥</p> 
+											</div>
+										  </div>
+								  </div>
+							
+							  </div>
+							
+					  
+							  <section id="bdy2" class="Formpart">
+								<form action="#">
+					  
+								<div class="container">
+								  <div class="px-2">
+									<div class="formpart">
+									  <div class="row">
+					  
+										<div class="col-lg-8 m-auto">
+										  <h4 class="formhead1">অবিবাহিত সনদ </h4>
+										  
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">আবেদনকারীর নাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">জাতীয় পরিচয় পত্র</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">জন্ম নিবন্ধন নাম্বার</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">ডাকঘর</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">গ্রাম</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">বিস্তারিত</h6>
+											</div>
+											<textarea class="inputs-clss px-2  " name="w3review" rows="6" cols="50"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat necessitatibus, aliquam, natus veritatis, laudantium in sapiente facilis perspiciatis ad ipsam eius mollitia cupiditate itaque porro optio! Perspiciatis, cumque odio?</textarea>     
+										  </div>
+										  
+										</div>
+										
+									  </div>
+									</div>
+									
+								  </div>
+								  <button class="subbutn">Submit</button>
+								</div>
+							  </form>
+							  </section>
+							</section>
+					  </div>
+				</div>
+				<!-- obibahito sonod  -->
+
+				<!-- mrittu sonod  -->
+				<div>
+					<div id="mtittiSonod" class="w3-container city" style="display:none">
+						<section  class="container  pt-3">
+							<div class="notishbar mb-5 ">
+								  <div class="leftpart">
+									<h2 class="notic ">সর্বশেষ নোটিশ</h2>
+								  </div>
+									 <div class="rightpart">
+									   <div class="scrolling-wrap pt-2 px-2">
+										 <div class="comm ">
+										   <p class="scroltextt">আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।
+											 চিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি॥</p> 
+											</div>
+										  </div>
+								  </div>
+							
+							  </div>
+							
+					  
+							  <section id="bdy2" class="Formpart">
+								<form action="#">
+					  
+								<div class="container">
+								  <div class="px-2">
+									<div class="formpart">
+									  <div class="row">
+					  
+										<div class="col-lg-8 m-auto">
+										  <h4 class="formhead1">মৃত্যু সনদ</h4>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">জন্ম নিবন্ধন নাম্বার</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5 ">পাসপোর্ট নাম্বার</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5 hh6">হোল্ডিং/বাড়ির নাম (বাংলা)</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5  hh6">হোল্ডিং/বাড়ির নাম (ইংরেজী)</h6>
+											</div>
+											<input class=" inputs-cls" type="text" >
+										  </div>
+
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class="frompart mb-5">ওয়ার্ড নং</h6>
+											</div>
+											<select name="cars" id="cars" class="selects">
+											  <option value="volvo">Select</option>
+											  <option value="volvo">1</option>
+											  <option value="saab">2</option>
+											  <option value="saab">3</option>
+											  <option value="saab">4</option>
+											  <option value="saab">5</option>
+											  <option value="saab">6</option>
+											  <option value="saab">7</option>
+											  <option value="saab">8</option>
+											  <option value="saab">9</option>
+											</select>
+										  </div>
+
+
+										  <div class="fromsf">
+											<div class="www">
+											  <h6 class=" frompart mb-5">
+												মৃত্যু তারিখ</h6>
+											</div>
+											<input class=" inputs-cls " type="date" >
+										  </div>
+										
+										 
+										</div>
+										
+									  </div>
+									</div>
+					  
+										
+								  </div>
+								  <button class="subbutn">Submit</button>
+								</div>
+							  </form>
+							  </section>
+							</section>
+					  </div>
+				</div>
+				<!-- mrittu sonod  -->
+			
+	  
+	
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!--plugins-->
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<!--Apex chart-->
+	<script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+	<script src="assets/js/widgets.js"></script>
+	<!-- App JS -->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
