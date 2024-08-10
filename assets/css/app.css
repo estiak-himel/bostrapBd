@@ -2134,15 +2134,96 @@ ul.icons li span {
 
 }
 
+/* edit form st  */
 
+.row {
+	margin-bottom: 20px;
+  }
+	 
+  .button.button-small {
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px;
+  }
+  
+  td input[type=text],
+  td select {
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	padding: 2px 8px;
+  }
+  
+  th:last-child {
+	text-align: right;
+  }
+  
+  td:last-child {
+	text-align: right;
+  }
+  
+  td:last-child .button {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-right: 5px;
+	
+  }
+  
+  td:last-child .button .fa {
+	line-height: 30px;
+	width: 30px;
+  }
 
+ /* profile st */
+ .form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+.form-control{
+	margin-bottom: 10px;
+}
 
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
 
+.profile-button:hover {
+    background: #682773
+}
 
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
 
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
 
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
 
+.labels {
+    font-size: 11px
+}
 
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+ /* profile end */
+
+/* edit form st  */
 
   .fromsf{
     display: flex;
@@ -2379,7 +2460,7 @@ ul.icons li span {
 }
 
 .container{
-  background: #eaede3;
+  
   padding-top: 25px;
 }
 
